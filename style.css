@@ -142,6 +142,146 @@
   font-size: 20px;
   margin-top: 20px;
   margin-right: 400px;
+  padding: 10px;
   text-decoration-line: none;
   color: green;
+  border: 1px solid rgba(255, 0, 0, 0.377);
+  border-radius: 8px;
+}
+.next-btn:hover {
+ color: #222121a6;
+ transition: all 0.2s ease-in;
+}
+
+
+/* Result Page */
+.result-container {
+  width: 100%;
+  height: 100vh;
+
+  /* background-color: #000; */
+}
+
+.result-container .result-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.result-img img {
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+}
+
+.result-img h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Chart */
+
+.chart-container {
+  margin-top: 50px;
+  position: relative;
+  width: 400px;
+}
+
+.bar-background {
+  width: 100%;
+  height: 50px;
+  background-color: #ff8080;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 70%; /* Change this value for progress */
+  background-color: #2ecc40;
+  border-radius: 8px 0 0 8px;
+}
+
+.center-label {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.left-indicator,
+.right-indicator {
+  position: absolute;
+  font-weight: bold;
+}
+
+.left-indicator {
+  top: 50px;
+  left: -50px;
+  /* color:rgba(53, 189, 58, 1); */
+}
+
+.right-indicator {
+  top: 50px;
+  right: -50px;
+  /* color:rgba(255, 122, 122, 1); */
+}
+
+.result-table {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.51);
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.bottom-lable {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.retry-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+
+  border-radius: 9px;
+  background-color: rgba(53, 189, 57, 0.837);
+  box-shadow: rgba(1, 171, 7, 0.908) 5.95px 5.95px 1.6px;
+  cursor: pointer;
+}
+
+.retry-btn a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.social-icons {
+  width: 400px;
+  text-align: center;
+  margin-top: 50px;
+}
+.social-icons p {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin: 10px;
 }
