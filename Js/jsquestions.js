@@ -144,6 +144,7 @@ const jsQuestions = [
     ],
     answer: "Converts a JavaScript object to JSON string"
   }
+  
 ];
 
 export default jsQuestions;
