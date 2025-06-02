@@ -11,22 +11,21 @@ let nextBtn = document.querySelector(".next-btn");
 //Here, we set the question count dynamically
 for (let i = 1; i <= jsQuestions.length; i++) {
   questionCount.innerText = i;
+  // If the question is not present in question array then set the 0 
+  if(!jsQuestions.length){
+     questionCount.innerText = '0';
+  }
 }
 
-
-  
-
-jsQuestions.forEach((elem, index) => {
-  totalQuestionAttempt.innerText = index + 1;
-  questionNum.innerText = elem.question
- 
-  console.log(elem.options)
-
-
-
-});
+//Here we set the data to local storage
+const all_Local_Storage_Data = JSON.parse(localStorage.getItem('all_Local_Storage_Data')) || {}
+localStorage.setItem('all_Local_Storage_Data', JSON.stringify(all_Local_Storage_Data))
 
 
 
 
-nextBtn.addEventListener("click", (e) => {});
+
+
+
+
+
